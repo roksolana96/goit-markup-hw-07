@@ -1,0 +1,44 @@
+//Make
+.make {
+    padding-top: 0;
+    padding-bottom: 94px;
+
+&__title {@extend %title-text;
+
+    margin-top: 0;
+    margin-bottom: 50px;}
+
+&__block {display: flex;
+    margin-right: -30px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    height: 294px;}
+
+&__block .make__image {flex-basis: calc((100% - 30px) / 3);
+    margin-right: 30px;}
+}
+
+    //Позиціонування
+.make__item{position: relative;
+    z-index: 1;
+    overflow: hidden;} 
+    
+.make__label{ display: flex;
+    height: 70px;
+    width: 370px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    align-items: center;
+    justify-content: center;
+
+    position: absolute; 
+    bottom:0;} 
+
+.make__description {@extend %paragraph;
+    color: #FFFFFF;
+
+    margin-top: 0;
+    margin-bottom:0;}
+

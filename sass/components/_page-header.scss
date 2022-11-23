@@ -1,0 +1,32 @@
+html {box-sizing: border-box;}
+
+*,
+*::after,
+*::before {box-sizing: inherit;} 
+
+.body {
+    margin: 0 auto;
+    color: $color-secondary;
+
+    font-family: Roboto, sans-serif ;
+    letter-spacing: 0.03em;
+}
+a {text-decoration: none;}
+
+// Header 
+.container {width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+
+.page-header {
+    align-items: center;
+    padding: 0px;
+    border: 1px solid #ECECEC; 
+
+.container {
+    display: flex;
+    align-items: center;
+}
+}

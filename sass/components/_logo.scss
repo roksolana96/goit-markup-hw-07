@@ -1,0 +1,13 @@
+//logo-header
+
+.logo__blue {@extend %logo;
+    color:$color;}
+
+.logo__black {color: $color-logo;}
+
+//logo-footer
+
+.logo-footer {@extend %logo;
+    padding-bottom: 20px;
+color:$color;}
+.logo-white {color: $color-accent;}
