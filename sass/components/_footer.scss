@@ -1,14 +1,32 @@
 // /*footer*/
 // /* footer-nav */
 .footer {background-color: $bg-color;}
-.footer-block {display: flex;}
+
+.footer-block {@media screen and (min-width: 1200px)
+    {display: flex;}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-bottom: 60px;
+}}
 
 .footer-nav {@extend %type;
     font-style: normal;
 
     padding-top: 60px;
     padding-bottom: 60px;
-    display: block;
+
+@media screen and (min-width: 1200px)
+{display: block;}
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{display: inline-block;
+text-align: center;}
+@media screen and (min-width: 480px) and (max-width: 767px)
+{text-align: center;}
+
+
 
 &__list {margin-top: 0;
     margin-bottom: 0;

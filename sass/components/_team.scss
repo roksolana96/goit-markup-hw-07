@@ -4,12 +4,26 @@
     padding-bottom: 94px;
     background: $color-button;
 
+@media screen and (min-width: 480px) and (max-width: 767px)
+{padding-bottom: 60px;}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{padding-bottom: 60px;}
+
 &__title {@extend %title-text;
 
     padding-top: 94px;
     padding-bottom: 50px;
     margin-top:0;
-    margin-bottom:0;}
+    margin-bottom:0;
+@media screen and (min-width: 480px) and (max-width: 767px)
+{padding-top: 60px;
+padding-bottom: 30px;}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{padding-top: 60px;
+padding-bottom: 30px;}
+}
 
 &__label {border-radius: 0px 0px 4px 4px;
     padding-top: 30px;
@@ -47,19 +61,54 @@
 }
 
 
-
-.team__block {display: flex;
-    margin-right: -30px;
+.team__block {
     padding: 0;
     margin: auto;
+
+@media screen and (min-width: 1200px)
+{display: flex;
+    margin-right: -30px;}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{display: flex;
+flex-wrap: wrap;
+margin: -15px;}
+
+// @media screen and (min-width: 480px) and (max-width: 767px)
+// {margin-bottom: -30px;
+//  }
+
 .team__item {background-color: $color-accent;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-right: 30px;
-    flex-basis: calc((100% - 30px) / 4);}
-& img {display:block;}
+    
+
+@media screen and (min-width: 1200px)
+{margin-right: 30px;
+flex-basis: calc((100% - 30px) / 4);}
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+{margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{width: calc((100% - 2 * 30px) / 2);
+margin: 15px;}
+
+&:last-child {@media screen and (min-width: 480px) and (max-width: 767px)
+{margin-bottom: 0px;}}
+}
+
+& img {@media screen and (min-width: 1200px)
+    {display:block;}}
+
+& img {@media screen and (min-width: 480px) and (max-width: 767px)
+{width: 100%;}}
+
+& img {@media screen and (min-width: 768px) and (max-width: 1199px)
+{width: 100%;}}
 }
 
 .team__name {font-weight: 700;

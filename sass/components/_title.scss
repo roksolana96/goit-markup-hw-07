@@ -19,7 +19,13 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
-    padding-bottom: 200px;}
+    padding-bottom: 200px;
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+{max-width: 480px;
+height: 400px;
+padding-top: 118px;
+padding-bottom: 118px;}}
 
 &__header {
     color:$color-accent;
@@ -31,7 +37,9 @@
     text-transform: uppercase;
 
     margin-bottom: 30px;
-    margin-top: 0;} 
+    margin-top: 0;
+@media screen and (min-width: 480px) and (max-width: 767px)
+{font-size: 28px;}} 
 
 &__button{@extend %button;
     display: inline-block;    

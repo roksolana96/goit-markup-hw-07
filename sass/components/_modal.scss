@@ -26,6 +26,10 @@
     min-height: 581px;
     width: 528px;
 
+@media screen and (min-width: 480px) and (max-width: 767px)
+{min-height: 609px;
+width: 450px;}
+
     background-color: $color-accent;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -47,6 +51,9 @@
     padding: 0;
     align-items: center;
     justify-content: center; 
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+{margin-left: 412px;}
 
 &-icon{fill: $color-logo;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}

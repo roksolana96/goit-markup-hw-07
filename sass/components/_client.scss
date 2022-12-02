@@ -6,17 +6,43 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
+@media screen and (min-width: 480px) and (max-width: 767px)
+{padding-top: 60px;
+padding-bottom: 60px;}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{padding-top: 60px;
+padding-bottom: 60px;}
+
 &__title {@extend %title-text;
   
     padding-bottom: 50px;
-    margin: 0;}
+    margin: 0;
+@media screen and (min-width: 480px) and (max-width: 767px)
+{padding-bottom: 30px;}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{padding-bottom: 30px;}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{padding-bottom: 30px;}
+}
 
     
 &__block { display: flex;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: -30px;}
+    margin-left: -30px;
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+{flex-wrap: wrap;
+margin: -15px;}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{flex-wrap: wrap;
+margin: -15px;}
+}
 }
     // /* іконки */
 .client__icon {display: flex;
@@ -26,12 +52,25 @@
     border: 1px solid $color-svg-team;
     border-radius: 4px;
     background-color: $color-accent;
-    flex-basis: calc((100% - 30px) / 6);
     margin-left: 30px;
 
     align-items: center;
     justify-content: center;
 
+@media screen and (min-width: 1200px)
+{flex-basis: calc((100% - 30px) / 6);}
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+{width: 210px;
+flex-basis: calc((100% - 2 * 30px) / 2);
+margin: 15px;}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{width: 210px;
+flex-basis: calc((100% - 3 * 30px) / 3);
+margin: 15px;}
+
+    
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:hover {border: 1px solid $color;}
 }  

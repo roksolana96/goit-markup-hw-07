@@ -7,12 +7,27 @@
     margin-left: 70px;
     margin-top: 72px;
 
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{margin-left: 165px;
+margin-top: 65px;
+text-align: center;}
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+{margin-left: 0;
+margin-top: 0;
+margin-bottom: 60px;
+justify-content: center;}
+
 &__title {font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
     text-transform: uppercase;
-    margin: 0;}}
+    margin: 0;
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+{text-align: center;}}
+}
 
  .join__icon {background-color:rgba(255, 255, 255, 0.1);
     display: inline-flex;
