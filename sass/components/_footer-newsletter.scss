@@ -1,15 +1,17 @@
     /* підпишіться на розсилку */
     /* newsletter */
-.newsletter { @media screen and (min-width: 1200px)
+.newsletter { display: block;
+    height: 156px;
+// max-width: 450px;
+
+@media screen and (min-width: 1200px)
     {display: flex;
-    height: 86px;
-    left: 206px;
+    height: 156px;
+    left: 450px;
     margin-left: 93px;
     margin-top: 72px;} 
 
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{display: flex;
-}   
+  
     
 &__title {font-weight: 700;
     font-size: 14px;
@@ -18,40 +20,36 @@
     text-transform: uppercase;
     margin:0px;
     padding-bottom: 20px;
+text-align: center;
 
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{text-align: center;}
-
-@media screen and (min-width: 480px) and (max-width: 767px)
-{text-align: center;}
+@media screen and (min-width: 1200px)
+{text-align: start;}
 }
     
-&__form{ @media screen and (min-width: 1200px)
+&__form{@media screen and (min-width: 1200px)
+
 {display: inline-flex;
 padding-right:12px;}  
 }
 
-// @media screen and (min-width: 768px) and (max-width: 1199px)
+// @media screen and (min-width: 480px) and (max-width: 767px)
 // {padding-bottom: 20px;}
-
-@media screen and (min-width: 480px) and (max-width: 767px)
-{padding-bottom: 20px;}
 }
     
-.newsletter__link input{margin: 0;
+.newsletter__link input{
+    margin: 0;
     margin-top: 0px;
     padding: 0;
     height: 50px;
-    width: 358px;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color:$bg-color;
-
-@media screen and (min-width: 480px) and (max-width: 767px)
-{width: 450px;}
-
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{width: 450px;}  
+ 
+@media screen and (min-width: 768px)
+{width: 450px;} 
+@media screen and (min-width: 1200px)
+{width: 358px;}   
 
 &::placeholder{color:rgba(255, 255, 255, 0.6);
     font-weight: 400;
@@ -63,16 +61,15 @@ padding-right:12px;}
 }
     
     
-.newsletter__button{display: inline-flex;
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{display: flex;
-justify-content: center;
-padding-top: 20px;}
+.newsletter__button{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 
-@media screen and (min-width: 480px) and (max-width: 767px)
-{display: flex;
-justify-content: center;
-padding-top: 20px;} 
+@media screen and (min-width: 1200px)
+{display: inline-flex;
+padding-top: 0;}
+
 
 &-title {@extend %button;
     width: 200px;
@@ -83,8 +80,6 @@ padding-top: 20px;}
     position: relative;
     padding-left: 28px;}
 
-@media screen and (min-width: 480px) and (max-width: 767px)
-{margin-bottom: 60px;}
 }
     
 .newsletter__icon{display: inline-flex;

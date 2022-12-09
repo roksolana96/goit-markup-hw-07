@@ -10,29 +10,33 @@ textarea{resize: none;}
     padding-top: 40px;
     padding-bottom: 12px;
     margin-top: 0;
-    margin-bottom: 0px;}
+    margin-bottom: 0px;
+
+@media screen and (max-width: 1199px)
+{width: 370px;
+margin: auto;}}
 
 &__block{@extend %form-field;
-    width: 448px;
+    width: 370px;
     margin-left:40px;
     margin-right: 40px;
 
-@media screen and (min-width: 480px) and (max-width: 767px)
-{width: 370px;}}
+@media screen and (min-width: 1200px)
+{width: 448px;}}
 }
 
 .input-form__line{
     cursor: pointer;
     height: 40px;
-    width: 448px;
+    width: 370px;
     padding-left: 42px;
     margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: rgba(33, 33, 33, 0.2);
 
-@media screen and (min-width: 480px) and (max-width: 767px)
-{width: 370px;}
+@media screen and (min-width: 1200px) 
+{width: 448px;}
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus {border-color: $color}  
@@ -77,7 +81,7 @@ textarea[type="comment"]::placeholder{color:rgba(117, 117, 117, 0.5) ;
 .input-form__comment{
     cursor: pointer;
     height: 120px;
-    width: 448px;
+    width: 370px;
     margin:0;
     padding: 12px 16px;
     margin-top: 4px;
@@ -86,8 +90,8 @@ textarea[type="comment"]::placeholder{color:rgba(117, 117, 117, 0.5) ;
     border-radius: 4px;
     outline: rgba(33, 33, 33, 0.2);
 
-@media screen and (min-width: 480px) and (max-width: 767px)
-{width: 370px;}
+@media screen and (min-width: 1200px)
+{width: 448px;}
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:focus {border-color: $color;}
@@ -130,7 +134,7 @@ textarea[type="comment"]::placeholder{color:rgba(117, 117, 117, 0.5) ;
     align-items: center;
     display: flex;
 
-@media screen and (min-width: 480px) and (max-width: 767px)
+@media screen and (max-width: 1199px)
 {font-size: 12px;
 line-height: 1.6;}}
     

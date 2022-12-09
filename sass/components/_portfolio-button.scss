@@ -2,36 +2,40 @@
 // /* button-list */
 
 .button-list {display:flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin: 0;
-
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{padding-left: 0;}
-
-@media screen and (min-width: 480px) and (max-width: 767px)
-{justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 40px;
 padding-left: 0;
-flex-wrap: wrap;
-margin-top: 60px;
-margin-bottom: 40px;}
+// @media screen and (min-width: 480px) and (max-width: 767px)
+// {flex-wrap: wrap;}
+
+@media screen and (min-width: 768px) 
+{justify-content: center;
+padding-bottom: 30px;}
+
+@media screen and (min-width: 1200px) 
+{padding-top: 94px;
+padding-bottom: 50px;}
+
 
 &__item {padding-right: 15px;
     margin: 0;
-    padding-top: 94px;
-    padding-bottom:50px;
-&__item:nth-child(5){padding-right: 0;}
 
-@media screen and (min-width: 480px) and (max-width: 767px)
+@media screen and (max-width: 767px)
 {padding-top: 0px;
-padding-bottom:15px;
-}}
+padding-bottom:15px;}}
+
 
 &__item:nth-child(5),&__item:nth-child(4) {@media screen and (min-width: 480px) and (max-width: 767px)
 {padding-bottom: 0px;}}
 
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{padding-top: 60px;
-padding-bottom: 33px;}
+&__item:last-child{@media screen and (min-width: 768px)
+{padding-right: 0;}}
+// @media screen and (min-width: 768px) and (max-width: 1199px)
+// {padding-top: 60px;
+// padding-bottom: 33px;}
 }
 
 .button-list button{

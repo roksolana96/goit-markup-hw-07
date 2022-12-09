@@ -1,0 +1,114 @@
+.mob-site-nav {cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-bottom: 0px;
+
+    // display: flex;
+    margin-left: 93px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0;
+
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+    font-size: 40px;
+    line-height: 1.15;
+
+
+& .mob-site-nave__item{padding-bottom: 32px;}
+& .mob-site-nave__item:last-child{padding-bottom: 0;}
+}
+
+
+.mob-site-nav__link {display: block ;
+    padding-top: 32px;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+& {color: #212121;} 
+&:hover, 
+&:focus, 
+&:active {color: $color;}
+margin: 0;
+padding-top: 0;}
+
+.mob-site-nav__studio{color: $color;}
+
+//contact-info
+
+.mob-contact-info {font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+
+    display: block;
+
+// margin-bottom: auto;
+// padding-top: 306px;
+
+& .mob-contact-info__item + .mob-contact-info__item
+{margin-left: 0;
+margin-top: 32px;}
+}
+
+.mob-contact-info__header {color:$color-primary;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus, 
+    &:active {color: $color;}
+
+&.mob {font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+color: $color;}}
+
+ //іконки contact-info
+.mob-contact-info__item {
+    display: flex;
+    content:"";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    
+    &:hover .mob-mail-icon{fill: $color;}
+    &:hover .mob-tel-icon{fill: $color;}}     
+
+
+.mob-nav{display: flex;
+flex-wrap: wrap;
+margin-top: 64px;
+margin-bottom: 0;
+padding: 0;
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{display: none;}
+
+@media screen and (min-width: 1200px)
+{display:none;}}
+
+.mob-nav__item{cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    padding-bottom: 0px;
+color: $color;
+
+padding-right: 10px;
+padding-left: 10px;}
+
+.mob-nav__block {
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+&:last-child{border-right: none;}}
+

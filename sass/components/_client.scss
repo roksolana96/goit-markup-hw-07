@@ -3,52 +3,56 @@
     margin-left: 30px;
     margin-top: 0;
     margin-left: 0;  
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-@media screen and (min-width: 480px) and (max-width: 767px)
+@media screen and (min-width: 768px)
 {padding-top: 60px;
 padding-bottom: 60px;}
 
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{padding-top: 60px;
-padding-bottom: 60px;}
+@media screen and (min-width: 1200px)
+{padding-top: 94px;
+padding-bottom: 94px;}
 
 &__title {@extend %title-text;
   
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     margin: 0;
-@media screen and (min-width: 480px) and (max-width: 767px)
+
+
+@media screen and (min-width: 768px)
 {padding-bottom: 30px;}
 
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{padding-bottom: 30px;}
+@media screen and (min-width: 1200px)
+{padding-bottom: 50px;}
 
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{padding-bottom: 30px;}
 }
-
     
 &__block { display: flex;
     padding-left: 0;
-    margin-top: 0;
+
+@media screen and (max-width: 1199px)
+{flex-wrap: wrap;
+margin: -15px;
+justify-content: center;}
+
+// @media screen and (min-width: 768px) and (max-width: 1199px)
+// {flex-wrap: wrap;
+// margin: -15px;}
+
+@media screen and (min-width: 1200px)
+    {margin-top: 0;
     margin-bottom: 0;
-    margin-left: -30px;
+    margin-left: -30px;}
 
-@media screen and (min-width: 480px) and (max-width: 767px)
-{flex-wrap: wrap;
-margin: -15px;}
 
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{flex-wrap: wrap;
-margin: -15px;}
 }
 }
     // /* іконки */
 .client__icon {display: flex;
     cursor: pointer;
     height: 92px;
-    width: 170px;         
+    width: 210px;         
     border: 1px solid $color-svg-team;
     border-radius: 4px;
     background-color: $color-accent;
@@ -57,18 +61,18 @@ margin: -15px;}
     align-items: center;
     justify-content: center;
 
+@media screen and (max-width: 767px)
+    {flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;}
+
+@media screen and (min-width: 768px)
+    {width: 226px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;}
+
 @media screen and (min-width: 1200px)
-{flex-basis: calc((100% - 30px) / 6);}
-
-@media screen and (min-width: 480px) and (max-width: 767px)
-{width: 210px;
-flex-basis: calc((100% - 2 * 30px) / 2);
-margin: 15px;}
-
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{width: 210px;
-flex-basis: calc((100% - 3 * 30px) / 3);
-margin: 15px;}
+    {width: 170px;
+    flex-basis: calc((100% - 30px) / 6);}
 
     
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);

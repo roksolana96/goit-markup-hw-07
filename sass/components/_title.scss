@@ -6,40 +6,89 @@
 &__block {
     @extend %title;
     background:$bg-color;
+
     background-image:linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../img/Imgmain.jpg);
+    url(../img_new/header/img_mob@1x.jpg);  
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx)
+        {background-image:linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../img_new/header/img_mob@2x.jpg);}       
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
 
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
-@media screen and (min-width: 480px) and (max-width: 767px)
-{max-width: 480px;
+// @media screen and (min-width: 480px) 
+// {max-width: 480px;
+// height: 400px;
+// padding-top: 118px;
+// padding-bottom: 118px;}
+
+@media screen and (min-width: 768px) 
+{max-width: 768px;
 height: 400px;
 padding-top: 118px;
-padding-bottom: 118px;}}
+padding-bottom: 118px;
+
+background-image:linear-gradient(to right,
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),
+
+url(../img_new/header/img_tab@1x.jpg);  
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)
+{background-image:linear-gradient(to right,
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),
+url(../img_new/header/img_tab@2x.jpg);} }
+
+@media screen and (min-width: 1200px) 
+{max-width: 1600px;
+height: 600px;
+padding-top: 200px;
+padding-bottom: 200px;
+
+background-image:linear-gradient(to right,
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),
+url(../img_new/header/img_comp@1x.jpg);  
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)
+{background-image:linear-gradient(to right,
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),
+url(../img_new/header/img_comp@2x.jpg);} 
+}
+}
 
 &__header {
     color:$color-accent;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 28px;
+    line-height: 1.5;
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     margin-bottom: 30px;
     margin-top: 0;
-@media screen and (min-width: 480px) and (max-width: 767px)
-{font-size: 28px;}} 
+@media screen and (min-width: 1200px)
+{font-size: 44px;
+line-height: 1.4;}} 
 
 &__button{@extend %button;
     display: inline-block;    

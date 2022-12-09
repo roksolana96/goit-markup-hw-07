@@ -2,15 +2,17 @@
 // /* footer-nav */
 .footer {background-color: $bg-color;}
 
-.footer-block {@media screen and (min-width: 1200px)
-    {display: flex;}
+.footer-block {padding-bottom: 60px;
+    
+@media screen and (min-width: 1200px)
+{display: flex;
+padding-bottom: 0;}
 
-@media screen and (min-width: 768px) and (max-width: 1199px)
+@media screen and (min-width: 768px) 
 {display: flex;
 flex-wrap: wrap;
-justify-content: center;
-padding-bottom: 60px;
-}}
+justify-content: center;}
+}
 
 .footer-nav {@extend %type;
     font-style: normal;
@@ -18,14 +20,15 @@ padding-bottom: 60px;
     padding-top: 60px;
     padding-bottom: 60px;
 
-@media screen and (min-width: 1200px)
-{display: block;}
+@media screen and (max-width: 767px)
+{text-align: center;}
+
 @media screen and (min-width: 768px) and (max-width: 1199px)
 {display: inline-block;
 text-align: center;}
-@media screen and (min-width: 480px) and (max-width: 767px)
-{text-align: center;}
 
+@media screen and (min-width: 1200px)
+{display: block;}
 
 
 &__list {margin-top: 0;
