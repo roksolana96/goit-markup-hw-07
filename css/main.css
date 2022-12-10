@@ -1551,7 +1551,7 @@ a {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 2;
+  z-index: 4;
   overflow-y: scroll;
 }
 @media screen and (max-width: 1199px) {
@@ -1569,11 +1569,15 @@ a {
 }
 
 .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 609px;
   width: 450px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1661,7 +1665,7 @@ textarea {
 .input-form__line {
   cursor: pointer;
   height: 40px;
-  width: 370px;
+  min-width: 370px;
   padding-left: 42px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -2116,7 +2120,7 @@ textarea[type=comment]::placeholder::placeholder {
   border: none;
   width: 40px;
   height: 40px;
-  z-index: 333;
+  z-index: 2;
   margin-left: auto;
 }
 .menu-toggle__icon-closeX {

@@ -12,6 +12,7 @@ textarea{resize: none;}
     margin-top: 0;
     margin-bottom: 0px;
 
+
 @media screen and (max-width: 1199px)
 {width: 370px;
 margin: auto;}}
@@ -28,7 +29,7 @@ margin: auto;}}
 .input-form__line{
     cursor: pointer;
     height: 40px;
-    width: 370px;
+    min-width: 370px;
     padding-left: 42px;
     margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
