@@ -1,35 +1,33 @@
     // /* Залиште свої дані, ми вам передзвонимо */
 textarea{resize: none;}
 
-.input-form{
-&__title{font-weight: 700;
+.input-form__title{font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
 
-    padding-top: 40px;
     padding-bottom: 12px;
     margin-top: 0;
     margin-bottom: 0px;
 
 
 @media screen and (max-width: 1199px)
-{width: 370px;
+{width: 100%;
 margin: auto;}}
 
-&__block{@extend %form-field;
-    width: 370px;
-    margin-left:40px;
-    margin-right: 40px;
+.input-form__block{@extend %form-field;
+    // width: 370px;
+    // margin-left:40px;
+    // margin-right: 40px;
 
 @media screen and (min-width: 1200px)
-{width: 448px;}}
-}
+{width: 100%;}}
+
 
 .input-form__line{
     cursor: pointer;
     height: 40px;
-    min-width: 370px;
+    width: 100%;
     padding-left: 42px;
     margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -37,7 +35,7 @@ margin: auto;}}
     outline: rgba(33, 33, 33, 0.2);
 
 @media screen and (min-width: 1200px) 
-{width: 448px;}
+{width: 100%;}
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus {border-color: $color}  
@@ -82,7 +80,7 @@ textarea[type="comment"]::placeholder{color:rgba(117, 117, 117, 0.5) ;
 .input-form__comment{
     cursor: pointer;
     height: 120px;
-    width: 370px;
+    width: 100%;
     margin:0;
     padding: 12px 16px;
     margin-top: 4px;
@@ -92,7 +90,7 @@ textarea[type="comment"]::placeholder{color:rgba(117, 117, 117, 0.5) ;
     outline: rgba(33, 33, 33, 0.2);
 
 @media screen and (min-width: 1200px)
-{width: 448px;}
+{width: 100%;}
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:focus {border-color: $color;}
@@ -128,16 +126,24 @@ textarea[type="comment"]::placeholder{color:rgba(117, 117, 117, 0.5) ;
     background-size: contain;
     background-origin: border-box;}
 }
-.checkbox-form{
-&__text{@extend %type;
+.checkbox-form{width: 100%;
+    margin: 0;
+    margin-top: 20px;
+
+&__text{
     text-align: center;
     color: $color-primary;
     align-items: center;
     display: flex;
+font-size: 12px;
+line-height: 1.6;
 
-@media screen and (max-width: 1199px)
-{font-size: 12px;
-line-height: 1.6;}}
+@media screen and (min-width: 1200px)
+{font-size: 14px;
+line-height: 1.7;
+margin-left: 13px;
+}
+}
     
 &__nav {color: $color;
     line-height: 24px;
@@ -145,11 +151,14 @@ line-height: 1.6;}}
     text-decoration: underline;}
 }
 
-.button-form{text-align: center;
-margin-bottom: 40px;
-&__text {@extend %button;
 
-    display: inline-block;
+
+.button-form__text{@extend %button;
+    margin: 20px auto 0px auto;
+    // display: inline-block;
     padding: 10px 32px;
-    width:216px;}
-}
+    display: flex;
+    justify-content: center;
+
+    width:200px;
+    }
