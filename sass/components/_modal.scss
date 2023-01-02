@@ -15,8 +15,8 @@
 
 
     overflow-y: scroll;
-@media screen and (max-width: 1199px)
-    {overflow-y: scroll;}
+// @media screen and (max-width: 1199px)
+//     {overflow-y: scroll;}
 
 &.is-hidden {opacity: 0;
     pointer-events: none;}
@@ -28,12 +28,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    overflow-y: scroll;
 
 // width: 450px;
     transform: translate(-50%, -50%);
     width: 100%;
 
-    // min-height: 500px;
+    min-height: 500px;
     max-width: 450px;
 
 

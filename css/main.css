@@ -1554,11 +1554,6 @@ a {
   z-index: 4;
   overflow-y: scroll;
 }
-@media screen and (max-width: 1199px) {
-  .backdrop {
-    overflow-y: scroll;
-  }
-}
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1573,9 +1568,11 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
+  overflow-y: scroll;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
+  min-height: 500px;
   max-width: 450px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -2176,6 +2173,7 @@ textarea[type=comment]::placeholder::placeholder {
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  overflow-y: scroll;
 }
 
 .menu-container .menu-toggle {

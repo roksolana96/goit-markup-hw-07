@@ -45,7 +45,8 @@ margin-left: auto;
   }
   
 .menu-container.is-open {
-  transform: translateX(0);}
+  transform: translateX(0);
+  overflow-y: scroll;}
   
 .menu-container .menu-toggle {
   position: absolute;
